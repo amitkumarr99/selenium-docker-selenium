@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="9" passed="9">
+  <reporter-output>
+    <line>
+      <![CDATA[------------------Automation Test started-------------------]]>
+    </line>
+    <line>
+      <![CDATA[instanceUrl: null]]>
+    </line>
+    <line>
+      <![CDATA[Environment: qa]]>
+    </line>
+    <line>
+      <![CDATA[Browser: chrome]]>
+    </line>
+    <line>
+      <![CDATA[hub_host: local]]>
+    </line>
+    <line>
+      <![CDATA[client: null]]>
+    </line>
+    <line>
+      <![CDATA[secret: null]]>
+    </line>
+    <line>
+      <![CDATA[locationKey: null]]>
+    </line>
+    <line>
+      <![CDATA[runType: local]]>
+    </line>
+    <line>
+      <![CDATA[market: us]]>
+    </line>
+    <line>
+      <![CDATA[-----------------------------------------------------]]>
+    </line>
+  </reporter-output>
+  <suite name="Smoke Suite" duration-ms="103046" started-at="2021-12-29T13:19:56Z" finished-at="2021-12-29T13:21:39Z">
+    <groups>
+    </groups>
+    <test name="Smoke Test" duration-ms="103046" started-at="2021-12-29T13:19:56Z" finished-at="2021-12-29T13:21:39Z">
+      <class name="smoke.test.SearchvalueTest">
+        <test-method status="PASS" signature="setUp(java.lang.reflect.Method)[pri:0, instance:smoke.test.SearchvalueTest@6b19b79]" name="setUp" is-config="true" duration-ms="27004" started-at="2021-12-29T13:19:56Z" finished-at="2021-12-29T13:20:23Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void smoke.test.SearchvalueTest.SearchValueOne()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="SearchValueOne()[pri:0, instance:smoke.test.SearchvalueTest@6b19b79]" name="SearchValueOne" duration-ms="26745" started-at="2021-12-29T13:20:23Z" finished-at="2021-12-29T13:20:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SearchValueOne -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:smoke.test.SearchvalueTest@6b19b79]" name="teardown" is-config="true" duration-ms="836" started-at="2021-12-29T13:20:50Z" finished-at="2021-12-29T13:20:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method status="PASS" signature="setUp(java.lang.reflect.Method)[pri:0, instance:smoke.test.SearchvalueTest@6b19b79]" name="setUp" is-config="true" duration-ms="8962" started-at="2021-12-29T13:20:51Z" finished-at="2021-12-29T13:21:00Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void smoke.test.SearchvalueTest.SearchValueTwo()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="SearchValueTwo()[pri:0, instance:smoke.test.SearchvalueTest@6b19b79]" name="SearchValueTwo" duration-ms="14697" started-at="2021-12-29T13:21:00Z" finished-at="2021-12-29T13:21:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SearchValueTwo -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:smoke.test.SearchvalueTest@6b19b79]" name="teardown" is-config="true" duration-ms="3097" started-at="2021-12-29T13:21:14Z" finished-at="2021-12-29T13:21:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method status="PASS" signature="setUp(java.lang.reflect.Method)[pri:0, instance:smoke.test.SearchvalueTest@6b19b79]" name="setUp" is-config="true" duration-ms="10558" started-at="2021-12-29T13:21:18Z" finished-at="2021-12-29T13:21:28Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void smoke.test.SearchvalueTest.hitGetMethod()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="hitGetMethod()[pri:0, instance:smoke.test.SearchvalueTest@6b19b79]" name="hitGetMethod" duration-ms="9614" started-at="2021-12-29T13:21:28Z" finished-at="2021-12-29T13:21:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- hitGetMethod -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:smoke.test.SearchvalueTest@6b19b79]" name="teardown" is-config="true" duration-ms="1146" started-at="2021-12-29T13:21:38Z" finished-at="2021-12-29T13:21:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- smoke.test.SearchvalueTest -->
+      <class name="smoke.test.SearchTest">
+        <test-method status="PASS" signature="setUp(java.lang.reflect.Method)[pri:0, instance:smoke.test.SearchTest@1d082e88]" name="setUp" is-config="true" duration-ms="27052" started-at="2021-12-29T13:19:56Z" finished-at="2021-12-29T13:20:23Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void smoke.test.SearchTest.SearchValueOne()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="SearchValueOne()[pri:0, instance:smoke.test.SearchTest@1d082e88]" name="SearchValueOne" duration-ms="26428" started-at="2021-12-29T13:20:23Z" finished-at="2021-12-29T13:20:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SearchValueOne -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:smoke.test.SearchTest@1d082e88]" name="teardown" is-config="true" duration-ms="1137" started-at="2021-12-29T13:20:50Z" finished-at="2021-12-29T13:20:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method status="PASS" signature="setUp(java.lang.reflect.Method)[pri:0, instance:smoke.test.SearchTest@1d082e88]" name="setUp" is-config="true" duration-ms="21821" started-at="2021-12-29T13:20:51Z" finished-at="2021-12-29T13:21:13Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void smoke.test.SearchTest.SearchValueTwo()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="SearchValueTwo()[pri:0, instance:smoke.test.SearchTest@1d082e88]" name="SearchValueTwo" duration-ms="17602" started-at="2021-12-29T13:21:13Z" finished-at="2021-12-29T13:21:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SearchValueTwo -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:smoke.test.SearchTest@1d082e88]" name="teardown" is-config="true" duration-ms="1034" started-at="2021-12-29T13:21:30Z" finished-at="2021-12-29T13:21:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method status="PASS" signature="setUp(java.lang.reflect.Method)[pri:0, instance:smoke.test.SearchTest@1d082e88]" name="setUp" is-config="true" duration-ms="4531" started-at="2021-12-29T13:21:31Z" finished-at="2021-12-29T13:21:36Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void smoke.test.SearchTest.hitGetMethod()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="hitGetMethod()[pri:0, instance:smoke.test.SearchTest@1d082e88]" name="hitGetMethod" duration-ms="1666" started-at="2021-12-29T13:21:36Z" finished-at="2021-12-29T13:21:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- hitGetMethod -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:smoke.test.SearchTest@1d082e88]" name="teardown" is-config="true" duration-ms="1347" started-at="2021-12-29T13:21:38Z" finished-at="2021-12-29T13:21:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- smoke.test.SearchTest -->
+      <class name="Utils.ConfigurationClass">
+        <test-method status="PASS" signature="initFramework(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:Utils.ConfigurationClass@7d3a22a9]" name="initFramework" is-config="true" duration-ms="42" started-at="2021-12-29T13:19:56Z" finished-at="2021-12-29T13:19:56Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[qa]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[local]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[local]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[us]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[------------------Automation Test started-------------------]]>
+            </line>
+            <line>
+              <![CDATA[instanceUrl: null]]>
+            </line>
+            <line>
+              <![CDATA[Environment: qa]]>
+            </line>
+            <line>
+              <![CDATA[Browser: chrome]]>
+            </line>
+            <line>
+              <![CDATA[hub_host: local]]>
+            </line>
+            <line>
+              <![CDATA[client: null]]>
+            </line>
+            <line>
+              <![CDATA[secret: null]]>
+            </line>
+            <line>
+              <![CDATA[locationKey: null]]>
+            </line>
+            <line>
+              <![CDATA[runType: local]]>
+            </line>
+            <line>
+              <![CDATA[market: us]]>
+            </line>
+            <line>
+              <![CDATA[-----------------------------------------------------]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- initFramework -->
+      </class> <!-- Utils.ConfigurationClass -->
+      <class name="smoke.test.SearchItemTest">
+        <test-method status="PASS" signature="setUp(java.lang.reflect.Method)[pri:0, instance:smoke.test.SearchItemTest@60704c]" name="setUp" is-config="true" duration-ms="28510" started-at="2021-12-29T13:19:56Z" finished-at="2021-12-29T13:20:25Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void smoke.test.SearchItemTest.SearchValueOne()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="SearchValueOne()[pri:0, instance:smoke.test.SearchItemTest@60704c]" name="SearchValueOne" duration-ms="23927" started-at="2021-12-29T13:20:25Z" finished-at="2021-12-29T13:20:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SearchValueOne -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:smoke.test.SearchItemTest@60704c]" name="teardown" is-config="true" duration-ms="1990" started-at="2021-12-29T13:20:49Z" finished-at="2021-12-29T13:20:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method status="PASS" signature="setUp(java.lang.reflect.Method)[pri:0, instance:smoke.test.SearchItemTest@60704c]" name="setUp" is-config="true" duration-ms="9727" started-at="2021-12-29T13:20:51Z" finished-at="2021-12-29T13:21:00Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void smoke.test.SearchItemTest.SearchValueTwo()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="SearchValueTwo()[pri:0, instance:smoke.test.SearchItemTest@60704c]" name="SearchValueTwo" duration-ms="17202" started-at="2021-12-29T13:21:00Z" finished-at="2021-12-29T13:21:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SearchValueTwo -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:smoke.test.SearchItemTest@60704c]" name="teardown" is-config="true" duration-ms="802" started-at="2021-12-29T13:21:18Z" finished-at="2021-12-29T13:21:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method status="PASS" signature="setUp(java.lang.reflect.Method)[pri:0, instance:smoke.test.SearchItemTest@60704c]" name="setUp" is-config="true" duration-ms="9485" started-at="2021-12-29T13:21:18Z" finished-at="2021-12-29T13:21:28Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void smoke.test.SearchItemTest.hitGetMethod()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="hitGetMethod()[pri:0, instance:smoke.test.SearchItemTest@60704c]" name="hitGetMethod" duration-ms="9630" started-at="2021-12-29T13:21:28Z" finished-at="2021-12-29T13:21:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- hitGetMethod -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:smoke.test.SearchItemTest@60704c]" name="teardown" is-config="true" duration-ms="937" started-at="2021-12-29T13:21:38Z" finished-at="2021-12-29T13:21:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- smoke.test.SearchItemTest -->
+    </test> <!-- Smoke Test -->
+  </suite> <!-- Smoke Suite -->
+</testng-results>
