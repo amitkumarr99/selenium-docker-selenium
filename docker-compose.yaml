@@ -1,0 +1,71 @@
+# To execute this docker-compose yml file use `docker-compose -f docker-compose-v3.yml up`
+# Add the `-d` flag at the end for detached execution
+# Change "SE_NODE_GRID_URL=http://localhost:4444" to the URL/IP where the Grid is accesible.
+# To stop the execution, hit Ctrl+C, and then `docker-compose -f docker-compose-v3.yml down`
+version: "3"
+services:
+  selenium-hub:
+    image: selenium/hub:3.141.59
+    ports:
+      - "4444:4444"
+    environment:
+      - GRID_MAX_SESSION=16
+      - GRID_BROWSER_TIMEOUT=300
+      - GRID_TIMEOUT=300   
+
+  chrome:
+    image: selenium/node-chrome-debug:3.141.59
+    volumes:
+      - /dev/shm:/dev/shm
+    depends_on:
+      - selenium-hub
+    environment:
+      - HUB_HOST=selenium-hub
+      - HUB_PORT=4444
+      - NODE_MAX_SESSION=8
+      - NODE_MAX_INSTANCES=8
+
+  firefox:
+    image: selenium/node-firefox-debug:3.141.59
+    volumes:
+      - /dev/shm:/dev/shm
+    depends_on:
+      - selenium-hub
+    environment:
+      - HUB_HOST=selenium-hub
+      - HUB_PORT=4444
+      - NODE_MAX_SESSION=8
+      - NODE_MAX_INSTANCES=8
+
+  smoke-suite:
+    image: seridocker/selenium-docker
+    depends_on:
+     - chrome
+     - firefox 
+    environment:
+      - browser=chrome
+      - runType=remote
+      - hub_host=selenium-hub
+      - suite=smoke.xml
+    volumes:
+      - ./smoke-results:/usr/share/auto/test-output
+
+  regression-suite:
+    image: seridocker/selenium-docker
+    depends_on:
+     - chrome
+     - firefox 
+    environment:
+      - browser=chrome
+      - runType=remote
+      - hub_host=selenium-hub
+      - suite=regression.xml
+    volumes:
+      - ./regression-results:/usr/share/auto/test-output
+
+
+
+
+
+  
+  
