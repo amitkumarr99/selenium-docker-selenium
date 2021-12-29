@@ -11,7 +11,7 @@ pipeline {
         stage('Build Image') {
             steps {
                 //bat
-                sh "docker build -t='vinsdocker/selenium-docker' ."
+                sh "docker build -t='seridocker/selenium-docker' ."
             }
         }
         stage('Push Image') {
@@ -19,7 +19,7 @@ pipeline {
 			    withCredentials([usernamePassword(credentialsId: 'dockerhub', passwordVariable: 'pass', usernameVariable: 'user')]) {
                     //bat
 			        sh "docker login --username=${user} --password=${pass}"
-			        sh "docker push vinsdocker/selenium-docker:latest"
+			        sh "docker push seridocker/selenium-docker:latest"
 			    }                           
             }
         }
