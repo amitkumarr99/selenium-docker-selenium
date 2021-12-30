@@ -3,11 +3,12 @@ pipeline {
     agent any
     stages {
         stage('Build Jar') {
-           docker {
+           
+            steps {
+            docker {
                     image 'maven:3-alpine'
                     args '-v /root/.m2:/root/.m2'
                   }
-            steps {
                 //bat
                 sh "mvn clean package -DskipTests"
             }
