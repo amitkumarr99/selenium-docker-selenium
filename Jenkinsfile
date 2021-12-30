@@ -3,6 +3,10 @@ pipeline {
     agent any
     stages {
         stage('Build Jar') {
+           docker {
+                    image 'maven:3-alpine'
+                    args '-v /root/.m2:/root/.m2'
+                  }
             steps {
                 //bat
                 sh "mvn clean package -DskipTests"
@@ -11,7 +15,7 @@ pipeline {
         stage('Build Image') {
             steps {
                 //bat
-                sh "docker build -t='seridocker/selenium-docker' ."
+                sh "docker build -t='amitkumarr99/selenium-docker' ."
             }
         }
         stage('Push Image') {
@@ -19,7 +23,7 @@ pipeline {
 			    withCredentials([usernamePassword(credentialsId: 'dockerhub', passwordVariable: 'pass', usernameVariable: 'user')]) {
                     //bat
 			        sh "docker login --username=${user} --password=${pass}"
-			        sh "docker push seridocker/selenium-docker:latest"
+			        sh "docker push amitkumarr99/selenium-docker:latest"
 			    }                           
             }
         }
