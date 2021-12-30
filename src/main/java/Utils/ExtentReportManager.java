@@ -37,7 +37,7 @@ public class ExtentReportManager {
 
 	private static ExtentHtmlReporter getHtmlReporter() {
 		
-		String path=System.getProperty("user.dir")+"//Reports"	;	
+		String path=System.getProperty("user.dir")+"//test-output"	;	
 		htmlReporter = new ExtentHtmlReporter(path + "/ExtentReport.html");
 		// Configuring htmlReporter
 		//htmlReporter.config().setChartVisibilityOnOpen(true);

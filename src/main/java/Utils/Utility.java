@@ -29,7 +29,7 @@ public class Utility {
 			if (propertyFilePath != null) {
 				user_dir = user_dir.replace("bin", "");
 			}
-			prop.load(new FileInputStream(user_dir + "//src//test//resources//Properties//" + fileName));
+			prop.load(new FileInputStream(user_dir + "//src//test/resources//Properties//" + fileName));
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();
 		} catch (IOException e) {
