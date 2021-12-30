@@ -13,11 +13,12 @@ Add target/selenium-docker-tests.jar   selenium-docker-tests.jar
 Add target/libs                        libs
 
 # in case any other dependency like csv/xls/json add taht as well
-Add target/config.properties           src/test/resources/Properties/config.properties
+#Add target/config.properties           src/test/resources/Properties/config.properties
 
 # Add suite files
 Add smoke.xml                          smoke.xml
 Add regression.xml                     regression.xml
+Add config.properties                  src/test/resources/Properties/config.properties
 
 # Add health check script
 Add healthcheck.sh                     healthcheck.sh
