@@ -92,7 +92,7 @@ public class SetBrowser {
 			} catch (MalformedURLException e) {
 				e.printStackTrace();
 			}
-
+			System.out.println("******** Hub url is :"+ url);
 			driver = new RemoteWebDriver(url, dc);
 		}
 
@@ -104,7 +104,7 @@ public class SetBrowser {
 			} catch (MalformedURLException e) {
 				e.printStackTrace();
 			}
-
+			System.out.println("******** Hub url is :"+ url);
 			driver = new RemoteWebDriver(url, dc);
 		}
 
@@ -126,7 +126,7 @@ public class SetBrowser {
 
 		driver.manage().window().maximize();
 		driver.manage().deleteAllCookies();
-		driver.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 		return driver;
 	}
 }

@@ -7,7 +7,7 @@
 	<parameter name="environment" value="qa" />
 	<parameter name="browser" value="chrome" />
 	<parameter name="runType" value="local" />
-	<parameter name="hub_host" value="local" /> 
+	<parameter name="hub_host" value="192.168.43.152" /> <!--localhost-->
 	<parameter name="market" value="us" /> 
 
 	<listeners>

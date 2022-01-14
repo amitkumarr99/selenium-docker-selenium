@@ -46,8 +46,11 @@ public class SearchDataTest {
 		String url=prop.getProperty("url");
 	
 		driver.get(url);
+		System.out.println("======== Browser opened ===========");
 		driver.findElement(By.xpath("//input[@name='q']")).sendKeys(prop.getProperty("val3"));
+		System.out.println("======== Element found ===========");
 		driver.findElement(By.name("q")).sendKeys(Keys.ENTER);
+		System.out.println("======== Search complete ===========");
 		
 	}
 	
@@ -57,9 +60,12 @@ public class SearchDataTest {
 		String url=prop.getProperty("url");
 	
 		driver.get(url);
+		System.out.println("======== Browser opened ===========");
 		driver.findElement(By.xpath("//input[@name='q']")).sendKeys(prop.getProperty("val4"));
+		System.out.println("======== Element found ===========");
 		driver.findElement(By.name("q")).sendKeys(Keys.ENTER);
-		driver.close();
+		System.out.println("======== Search complete ===========");
+		
 	}
 	
 	@Test

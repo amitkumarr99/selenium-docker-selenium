@@ -47,10 +47,14 @@ public class SearchTest {
 
 		String url=prop.getProperty("url");
 		driver.get(url);
+		System.out.println("======== Browser opened ===========");
 		driver.findElement(By.xpath("//input[@name='q']")).sendKeys(prop.getProperty("val1"));
+		System.out.println("======== Element found ===========");
 		driver.findElement(By.name("q")).sendKeys(Keys.ENTER);
+		System.out.println("======== Search complete ===========");
 		
 	}
+	
 	
 	@Test
 	public void SearchValueTwo() {
@@ -58,9 +62,11 @@ public class SearchTest {
 		String url=prop.getProperty("url");
 	
 		driver.get(url);
+		System.out.println("======== Browser opened ===========");
 		driver.findElement(By.xpath("//input[@name='q']")).sendKeys(prop.getProperty("val2"));
+		System.out.println("======== Element found ===========");
 		driver.findElement(By.name("q")).sendKeys(Keys.ENTER);
-		driver.close();
+		System.out.println("======== Search complete ===========");
 	}
 	
 	@Test

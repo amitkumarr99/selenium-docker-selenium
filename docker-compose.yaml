@@ -38,34 +38,28 @@ services:
       - NODE_MAX_INSTANCES=8
 
   smoke-suite:
-    image: seridocker/selenium-docker
+    image: amitkumarr99/selenium-docker
     depends_on:
      - chrome
      - firefox 
     environment:
       - browser=chrome
       - runType=remote
-      - hub_host=selenium-hub
+      - hub_host=192.168.43.152
       - suite=smoke.xml
     volumes:
-      - ./smoke-results:/usr/share/auto/test-output
+      - ./output/smoke-results:/usr/share/auto/test-output
 
   regression-suite:
-    image: seridocker/selenium-docker
+    image: amitkumarr99/selenium-docker
     depends_on:
      - chrome
      - firefox 
     environment:
       - browser=chrome
       - runType=remote
-      - hub_host=selenium-hub
+      - hub_host=192.168.43.152
       - suite=regression.xml
     volumes:
-      - ./regression-results:/usr/share/auto/test-output
-
-
-
-
-
-  
-  
+      - ./output/regression-results:/usr/share/auto/test-output
+      
