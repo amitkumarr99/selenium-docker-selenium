@@ -58,7 +58,7 @@ services:
     environment:
       - browser=chrome
       - runType=remote
-      - hub_host=192.168.43.152
+      - hub_host=localhost
       - suite=regression.xml
     volumes:
       - ./output/regression-results:/usr/share/auto/test-output
