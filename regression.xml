@@ -3,11 +3,10 @@
 
 <suite name="Regression Suite" parallel="classes" thread-count="4">
 
-	
-	<parameter name="environment" value="qa" />
 	<parameter name="browser" value="chrome" />
-	<parameter name="runType" value="remote" />
-	<parameter name="hub_host" value="192.168.43.152" /> <!--localhost-->
+	<parameter name="runType" value="local" />
+	<parameter name="hub_host" value="localhost" /> <!--192.168.43.152-->
+	<parameter name="environment" value="qa" />
 	<parameter name="market" value="us" /> 
 
 	<listeners>
@@ -15,7 +14,7 @@
 			class-name="Utils.TestListeners" />
 	</listeners>
 
-	<test name="Smoke Test">
+	<test name="Regression Test">
 		<classes>
 		   	<class name="Utils.ConfigurationClass" /> 
 			<class name="smoke.test.SearchTest" />

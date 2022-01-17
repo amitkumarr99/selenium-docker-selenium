@@ -28,5 +28,5 @@ ENTRYPOINT sh healthcheck.sh
 #browser
 #runType
 #hub_host
-#module/suite
+#suite
 #ENTRYPOINT java -cp selenium-docker.jar:selenium-docker-tests.jar:libs/* -Dbrowser=$browser -DrunType=$runType -Dhub_host=$hub_host org.testng.TestNG $suite

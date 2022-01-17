@@ -73,6 +73,7 @@ public class SearchDataTest {
 		
 		RestAssured.baseURI="https://reqres.in";
 		String Resource="/api/users?page=3";
+		System.out.println("======== API Tets ===========");
 		Response resp = given().log().all().when().get(Resource).
 				then().assertThat().statusCode(200).and().contentType(ContentType.JSON).extract().response();
 		System.out.println(resp.asString());
@@ -82,6 +83,7 @@ public class SearchDataTest {
 	
 	@AfterMethod
 	public void teardown() {
+		System.out.println("======== Closing Browser ===========");
 		driver.quit();
 	}
 
