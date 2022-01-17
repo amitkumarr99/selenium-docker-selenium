@@ -25,8 +25,8 @@ Add healthcheck.sh                     healthcheck.sh
 
 ENTRYPOINT sh healthcheck.sh
 
-#browser
-#runType
-#hub_host
-#suite
-#ENTRYPOINT java -cp selenium-docker.jar:selenium-docker-tests.jar:libs/* -Dbrowser=$browser -DrunType=$runType -Dhub_host=$hub_host org.testng.TestNG $suite
+#BROWSER
+#RUNTYPE
+#HUB_HOST
+#SUITE
+#ENTRYPOINT java -cp selenium-docker.jar:selenium-docker-tests.jar:libs/* -DBROWSER=$BROWSER -DRUNTYPE=$RUNTYPE -Dhub_host=$HUB_HOST org.testng.TestNG $SUITE

@@ -34,9 +34,9 @@ public class SearchItemTest {
 	@BeforeMethod
 	public void setUp(Method method) {
 		
-		browserName = ConfigurationClass.browser;
-		runType = ConfigurationClass.runType;
-		host =ConfigurationClass.hub_host;
+		browserName = ConfigurationClass.BROWSER;
+		runType = ConfigurationClass.RUNTYPE;
+		host =ConfigurationClass.HUB_HOST;
 		prop = Utility.loadPropertiesFile("config.properties");
 		driver = new SetBrowser().launchBrowser(browserName, host, runType);
 		

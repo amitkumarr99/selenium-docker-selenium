@@ -3,9 +3,9 @@
 
 <suite name="Regression Suite" parallel="classes" thread-count="4">
 
-	<parameter name="browser" value="chrome" />
-	<parameter name="runType" value="local" />
-	<parameter name="hub_host" value="localhost" /> <!--192.168.43.152-->
+	<parameter name="BROWSER" value="chrome" />
+	<parameter name="RUNTYPE" value="local" />
+	<parameter name="HUB_HOST" value="localhost" /> <!--192.168.43.152-->
 	<parameter name="environment" value="qa" />
 	<parameter name="market" value="us" /> 
 

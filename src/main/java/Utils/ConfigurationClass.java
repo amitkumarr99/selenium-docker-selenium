@@ -8,44 +8,44 @@ import org.testng.annotations.Parameters;
 
 public class ConfigurationClass {
 	
-	public static String browser;
-	public static String hub_host;
+	public static String BROWSER;
+	public static String HUB_HOST;
+	public static String RUNTYPE;
 	public static String environment;
 	public static String instanceUrl;
 	public static String client;
 	public static String secret;
 	public static String locationKey;
-	public static String runType;
 	public static String market;
 
 	//private static Properties frameworkProp;
 
 	@BeforeSuite(alwaysRun = true)
-	@Parameters({ "environment", "instanceUrl", "browser", "hub_host", "client", "secret", "locationKey",
-			"runType", "market" })
+	@Parameters({ "environment", "instanceUrl", "BROWSER", "HUB_HOST", "client", "secret", "locationKey",
+			"RUNTYPE", "market" })
 	public void initFramework(@Optional("") final String environment, @Optional("") final String instanceUrl,
-			@Optional("") final String browser, @Optional("") final String hub_host, @Optional("") final String client,
+			@Optional("") final String BROWSER, @Optional("") final String HUB_HOST, @Optional("") final String client,
 			@Optional("") final String secret, @Optional("") final String locationKey,
-			@Optional("") final String runType, @Optional("") final String market) {
+			@Optional("") final String RUNTYPE, @Optional("") final String market) {
 		
 		//loadFrameworkPropertiesFile();
 		
-		setFinalFrameworkProperties(environment, instanceUrl, browser, hub_host, client, secret, locationKey,
-				runType, market);
+		setFinalFrameworkProperties(environment, instanceUrl, BROWSER, HUB_HOST, client, secret, locationKey,
+				RUNTYPE, market);
 		printFrameworkConfigurations();
 	}
 
-	private void setFinalFrameworkProperties(final String environment, final String instanceUrl, final String browser,
-			final String hub_host, final String client, final String secret, final String locationKey,
-			final String runType, final String market) {
+	private void setFinalFrameworkProperties(final String environment, final String instanceUrl, final String BROWSER,
+			final String HUB_HOST, final String client, final String secret, final String locationKey,
+			final String RUNTYPE, final String market) {
 		ConfigurationClass.environment = getValue("environment", environment);
 		ConfigurationClass.instanceUrl = getValue("instanceUrl", instanceUrl);
-		ConfigurationClass.browser = getValue("browser", browser);
-		ConfigurationClass.hub_host = getValue("hub_host", hub_host);
+		ConfigurationClass.BROWSER = getValue("BROWSER", BROWSER);
+		ConfigurationClass.HUB_HOST = getValue("HUB_HOST", HUB_HOST);
 		ConfigurationClass.client = getValue("client", client);
 		ConfigurationClass.secret = getValue("secret", secret);
 		ConfigurationClass.locationKey = getValue("locationKey", locationKey);
-		ConfigurationClass.runType = getValue("runType", runType);
+		ConfigurationClass.RUNTYPE = getValue("RUNTYPE", RUNTYPE);
 		ConfigurationClass.market = getValue("market", market);
 	}
 
@@ -70,14 +70,14 @@ public class ConfigurationClass {
 
 	private void printFrameworkConfigurations() {
 		Reporter.log("------------------Automation Test started-------------------", true);
+		Reporter.log("BROWSER: " + ConfigurationClass.BROWSER, true);
+		Reporter.log("HUB_HOST: " + ConfigurationClass.HUB_HOST, true);
+		Reporter.log("RUNTYPE: " + ConfigurationClass.RUNTYPE, true);
 		Reporter.log("instanceUrl: " + ConfigurationClass.instanceUrl, true);
 		Reporter.log("Environment: " + ConfigurationClass.environment, true);
-		Reporter.log("Browser: " + ConfigurationClass.browser, true);
-		Reporter.log("hub_host: " + ConfigurationClass.hub_host, true);
 		Reporter.log("client: " + ConfigurationClass.client, true);
 		Reporter.log("secret: " + ConfigurationClass.secret, true);
 		Reporter.log("locationKey: " + ConfigurationClass.locationKey, true);
-		Reporter.log("runType: " + ConfigurationClass.runType, true);
 		Reporter.log("market: " + ConfigurationClass.market, true);
 		Reporter.log("-----------------------------------------------------", true);
 	}

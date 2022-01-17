@@ -21,7 +21,6 @@ services:
       - selenium-hub
     environment:
       - HUB_HOST=selenium-hub
-      - HUB_PORT=4444
       - NODE_MAX_SESSION=8
       - NODE_MAX_INSTANCES=8
 
@@ -30,10 +29,10 @@ services:
     depends_on:
      - chrome
     environment:
-      - browser=chrome
-      - runType=remote
-      - hub_host=selenium-hub
-      - suite=smoke.xml
+      - BROWSER=chrome
+      - RUNTYPE=remote
+      - HUB_HOST=selenium-hub
+      - SUITE=smoke.xml
     volumes:
       - ./output/smoke-results:/usr/share/auto/test-output
 
@@ -42,10 +41,10 @@ services:
     depends_on:
      - chrome 
     environment:
-      - browser=chrome
-      - runType=remote
-      - hub_host=localhost
-      - suite=regression.xml
+      - BROWSER=chrome
+      - RUNTYPE=remote
+      - HUB_HOST=localhost
+      - SUITE=regression.xml
     volumes:
       - ./output/regression-results:/usr/share/auto/test-output
       
