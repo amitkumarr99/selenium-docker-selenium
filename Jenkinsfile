@@ -36,7 +36,7 @@ pipeline {
         }
 		stage("Run Tests") {
             steps {   
-                sh "docker-compose up  smoke-suite regression-suite"
+                sh "docker-compose up  smoke-suite"
             }
         }
     }
